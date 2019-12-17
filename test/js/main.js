@@ -40,5 +40,78 @@ $(document).ready(function(){
 
   //$('<div>Replace</div>').replaceAll('.replaceMe,.replaceMeAG');
 
-  $('.removeMe').remove();
+  //$('.removeMe').remove();
+
+ // $('a').text('something');
+
+ // console.log($('a').attr('href'));
+
+  //console.log($('input').prop('checked'));
+
+  // let classes = $('div').attr('class');
+
+  // console.log(classes);
+
+  // console.log($('.element').hasClass('anotherClass'));
+
+  // $('.element').addClass('button');
+
+  // $('.element').toggleClass('anotherClass soem');
+
+  // let element = $('.element');
+
+  // console.log(element.css('width'));
+  // console.log(element.css('fontSize'));
+
+  // // element.css("background", "blue");
+  // // element.css("width", "-=50px");
+
+  // element.css({
+  //   "background": "red",
+  //   "color": "blue",
+  //   "width": "+=50px"
+  // })
+
+  // console.log($('.element').data('name'));
+  // console.log($('.element').data('hobbies'));
+
+  // console.log($('.element').data());
+
+  // $('.element').on("click mouseleave mouseover", function(){
+  //   console.log('Click !!');
+  // });
+
+  // $('.element').mouseenter(function(){
+  //   console.log('mouse enter');
+  // });
+
+  // $('.element').mouseleave(function(){
+  //   console.log('mouse leave');
+  // });
+
+  // $('.element').hover(function(){
+  //   console.log('mouse enter');
+  // }, function(){
+  //   console.log('mouse leave');
+  // });
+
+  // $('.element').mousedown(function(){
+  //   console.log('click down');
+  // });
+  // $('.element').mouseup(function(){
+  //   console.log('click release');
+  // })
+
+  // $('.element').mousemove(function(e){
+    
+  //   let pagecoords = "{" + e.pagex + ", " + e.pageY + "}";
+  //   console.log("coords:"+ pagecoords);
+  
+  // });
+
+
+  $(document).keydown(function(e){
+    console.log(e.which);
+  })
+
 });
