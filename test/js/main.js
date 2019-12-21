@@ -110,8 +110,28 @@ $(document).ready(function(){
   // });
 
 
-  $(document).keydown(function(e){
-    console.log(e.which);
-  })
+  // $(document).keydown(function(e){
+  //   let DOWN = 40;
+  //   let RIGHT = 37;
 
+  //   if(e.which === DOWN){
+  //     $('.element').css({top:"+=10px"});
+  //   }
+  //   if(e.which === RIGHT){
+  //     $('.element').css({left:"+=10px"});
+  //   }
+  // })
+
+  // $(document).scroll(function(e){
+  //   console.log('scrolling');
+  // });
+
+  $('input').focusin(function(){
+    console.log('Foucus in')
+  });
+
+  
+  $('input').focusout(function(){
+    console.log('Foucus out')
+  });
 });
