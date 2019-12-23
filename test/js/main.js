@@ -126,12 +126,45 @@ $(document).ready(function(){
   //   console.log('scrolling');
   // });
 
-  $('input').focusin(function(){
-    console.log('Foucus in')
-  });
+  // $('input').focusin(function(){
+  //   console.log('Foucus in')
+  // });
 
   
-  $('input').focusout(function(){
-    console.log('Foucus out')
+  // $('input').focusout(function(){
+  //   console.log('Foucus out')
+  // });
+
+  // $('.template').load("templetes/temple.html .innerdiv",function(){console.log('done loading')});
+
+  //  let method = 'POST';
+  //  let url = 'https://jsonplaceholder.typicode.com/users';
+  //  let DB = JSON.stringify({name:'frances',lastanme:'jshan'});
+
+  // $.ajax(url,{
+  //   method: method,
+  //   data: DB,
+  //   dataType:'json',
+  //   constentType:'application/json',
+  //   error: function(e){
+  //     console.log(e);
+  //   },
+  //   success: function(data){
+  //     console.log(data);
+  //   }
+  // });
+
+  $('.tab_header .item').on("click", function(){
+    var number = $(this).data("option");
+    
+    $('.tab_header .item').removeClass('active')
+
+    $(this).addClass('active');
+
+    $('.tab_container .container_item').hide();
+    $('div[data-item="'+ number +'"]').show();
+
   });
+
+
 });
