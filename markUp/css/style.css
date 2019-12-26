@@ -1,0 +1,42 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+}
+
+.overlay-veil{
+    position: fixed;
+    left:0;
+    top:0;
+    width:100%;
+    height: 100%;
+    z-index: 9999;
+    background: #cecece;
+    display: none;
+}
+
+.overlay-component{
+    width: 400px;
+    height: 400px;
+    background: #fff;
+    position: absolute;
+    color: #fff;
+    border-radius: 10px;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    z-index: 9999;   
+    display: none;
+}
+
+.overlay-component .closeOverlay{
+    color: #bd2424;
+    cursor: pointer;
+}
+.overlay-component h1 {
+    color: #4a4a4a;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ee00ee;
+}
+.overlay-component .ov-content{
+    color: #868686; 
+}

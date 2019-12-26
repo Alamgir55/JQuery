@@ -4,8 +4,10 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	 <script src="js/jquery.js"></script>
+	 <script src="js/jquery-ui.min.js"></script>
+	 <link rel="stylesheet" href="css/jquery-ui.min.css">
 	 <link rel="stylesheet" href="css/style.css">
-	<script src="js/main.js"></script> 
+	 <script src="js/main.js"></script> 
 	<style media="screen">
 		
 	</style>
@@ -13,133 +15,31 @@
 <body>
 	
 	<h2 id="title">Local Storage - dcode</h2>
-	
-	<!-- <ul id="list">
-		<li>Element 1</li>
-		<li>Element 2</li>
-		<li>Element 3</li>
-		<li>Element 4</li>
-		<li>Element 5</li>
-		<li>Element 6</li>
-	</ul>
 
-	<br/> -->
-
-	<!-- <ul>
-		<li>Element 1</li>
-		<li>Element 2</li>
-	</ul> -->
-
-	<!-- <br>
-
-	<p class="text">My Text 1</p>
-	<p>My Text 2</p>
-	<p>My Text 3</p> -->
-
-	 <!-- <form action="">
-		 <input type="text" placeholder="Enter a name">
-		 <br><br>
-		 <input type="password" placeholder="Enter the pass">
-	 </form> -->
-
-	 <!-- <div class="parent"> -->
-		 <!-- <div>My text div</div>
-		 <p class="par">My text p</p>
-		 <span>My text span</span>
-
-		 <div>My text div</div>
-		 <p id="text">My text p</p>
-		 <span>My text span</span> -->
-		
-		 <!-- <div class="user">
-			 <div>Firstname: Some</div>
-			 <div class="hobbies">
-				 <p>NBA, CARS, CODING</p>
-			 </div>
-		 </div> -->
-
-		 <!-- <div class="wrapper">
-			<ul class="list">
-				<li>First</li>
-				<li>Second</li>
-				<li>Third</li> 
-			</ul>
-		</div> -->
-
-
-	 <!-- </div> -->
-
-
-	 <!-- <div class="first">First</div>
-	 <div class="second">Second</div>
-	 <div class="third">Third</div> -->
-
-	 <!-- <div>
-		 <p>A par in div</p>
-		 <p>Another par in a div</p>
-	 </div>
-
-	 <br>
-
-	 <div class="midd">
-		<p>A par in div</p>
-		<p>Another par in a div</p>
+	<div class="draggable">
+		<p>Drag me around</p>
 	</div>
 
-	<br>
-
-	<div>
-		<p>A par in div</p>
-		<p>Another par in a div</p>
+	<div class="droppable">
+		<p>Drop me around</p>
 	</div>
 
-	<br> -->
 
-
-	<!-- <div class="element">Element</div> -->
-
-	 
-	<!-- <div class="replaceMe">Replace Me</div>
-
-	<div class="replaceMeAG">Replace Me Again</div> -->
-
-	<!-- <a href="www.google.com">Click Me</a> -->
-
-	<!-- <input type="radio" value="fast car" checked>SOme -->
-
-	<!-- <div class="element" style="width:200px;font-size:40px;">
-		My new element
-	</div> -->
-
-	<!-- <div class="element" data-name="rake" data-hobbies="['Tv', 'Acting', 'Reading']">User</div> -->
-<!-- 
-	<div class="element" style="background: red;width:200px; height: 200px;">
-		element
-	</div>
-
-	<!-- <input type="text" placeholder="Enter Name"> -->
-	<!-- <div class="trigger">Trigger</div> --> 
-
-<!-- 
-	<div class="template">
-
-	</div> -->
-
-	<div id="awesome_tab">
-		<div class="tab_header">
-			<div class="item active" data-option="1">Option 1</div>
-			<div class="item" data-option="2">Option 2</div>
-			<div class="item" data-option="3">Option 3</div>
-		</div>
-
-		<div class="tab_container">
-			<div class="container_item active" data-item="1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium nihil, esse, neque consectetur minima eum, vero deleniti voluptates rerum fugit molestiae excepturi praesentium beatae quis magnam! Nostrum earum enim animi distinctio autem quis voluptatum officiis, provident, nesciunt officia vero fugiat.</div>
-
-			<div class="container_item" data-item="2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium nihil, esse, neque consectetur minima eum, vero deleniti voluptates rerum fugit molestiae excepturi praesciunt officia vero fugiat.</div>
-
-			<div class="container_item" data-item="3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium nihil, esse, neque consectetur minima eum, vero deleniti voluptates rerum fugit molestiae excepturi praesentium beatae quis magnam! Nostrum earum enim animi distinctio autem quis voluptatum officiis, provident, nesciunt officia vero fugiat.</div>
-		</div>
-	</div>
+	<style>
+		.draggable{
+			width: 100px;
+			height: 100px;
+			background: rgba(255, 0, 0, 0.671);
+		}
+		.droppable{
+			width: 400px;
+			height: 400px;
+			background: blue;
+		}
+		.accpectable{
+			background: green;
+		}
+	</style>
 
 </body>
 </html>

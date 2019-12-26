@@ -154,17 +154,73 @@ $(document).ready(function(){
   //   }
   // });
 
-  $('.tab_header .item').on("click", function(){
-    var number = $(this).data("option");
+  // $('.tab_header .item').on("click", function(){
+  //   var number = $(this).data("option");
     
-    $('.tab_header .item').removeClass('active')
+  //   $('.tab_header .item').removeClass('active')
 
-    $(this).addClass('active');
+  //   $(this).addClass('active');
 
-    $('.tab_container .container_item').hide();
-    $('div[data-item="'+ number +'"]').show();
+  //   $('.tab_container .container_item').hide();
+  //   $('div[data-item="'+ number +'"]').show();
 
+  // });
+
+  // $('.draggable').draggable({
+  //   //axis:"x"
+  //   cancel: '.not_this',
+  //   containment: '.parent',
+  //   grid:[50, 20],
+  //   handle: '.handle',
+  //   opacity: '0.45',
+  //   //drag:function(event, ui){console.log(ui);}
+  // });
+
+
+  $('.draggable').draggable();
+  $('.droppable').droppable({
+      accecpt: '.droppable',
+      drop: function(event, ui){
+        $(this).addClass('accpectable');
+        console.log(ui.draggable.attr('class'))
+      },
+      out: function(event, ui){
+        $(this).removeClass('accpectable');
+      }
   });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 });
