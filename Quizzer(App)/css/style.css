@@ -35,6 +35,31 @@ body{
     background: #3f51b3;
     color: #fff;
 }
+.panel_two .wrapper,
+.panel_three .wrapper,
+.panel_four .wrapper,
+.panel_five .wrapper{
+    display:none;
+}
+
+.options {
+    height: 200px;
+}
+.options div {
+    display: none; 
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: #3f51b5;
+    transition: all 0.2s ease;
+}
+
+.options div.active {
+    color: #007fff;
+    background: #313131;
+}
+.next_question{
+    cursor: pointer;
+}
 
 .error{
     position: fixed;
